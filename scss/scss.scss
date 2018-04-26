@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+/* hero section */
+.hero{
+    background-image: url("../images/build/hero-bg.jpg");
+    height: 800px;
+    background-size: cover;
+}
+.logo{
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+}
+.menu {
+    font-size: 1em;
+    font-family: "Raleway";
+    color: rgb(234, 234, 234);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 29px;
+}
+.menu li{
+    list-style: none;
+    display: inline;
+    margin-right: 65px;
+}
+.menu li:nth-of-type(3){
+    margin-right: 0;
+}
+.menu li:nth-of-type(1){
+    margin-left: -20px;
+
+}
+.cta{
+    text-align: center;
+    
+}
+.Making_things{
+    font-size: 2.7em;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    padding-top: 125px; 
+    margin-bottom: 10px;
+}
+.for_companies{
+    font-size: 1.371em;
+    font-family: "Raleway";
+    margin: 0;
+    color: rgb(255,255,255);
+}
+
+.see_our_work {
+    font-size: 1.2em;
+    font-family: "Raleway";
+    color: rgb(0, 255, 108);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline;
+    border: none;
+    background-color: rgba(0, 255, 108, 0); 
+}
+.rectangleOverTheButton1 {
+    border-style: solid;
+    border-width: 2px;
+    width: 10em;
+    padding: 1.125em 2.063em;
+    border-color: rgb(0, 255, 108);
+    background-color: rgba(0, 255, 108, 0);
+    margin: auto;
+    margin-top: 77px;
+    text-align: center;
+    cursor: pointer;
+}
+  
+@media (max-width: 482px){
+    .menu {
+        margin-left: 45px;
+        margin-top: 29px;
+    }
+    .menu li:nth-of-type(3){
+        display: block;
+        margin-left: -85px;
+        margin-top: 20px;
+    }
+   
+} 
+@media (max-width: 393px){
+    .menu {
+       font-size: 1.3em;
+       margin-left: 0;
+       margin-top: 0;
+    }
+    .menu li:nth-of-type(1){
+        display: block;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .menu li:nth-of-type(2){
+        display: block;
+        margin-top: 20px;
+    }
+    .menu li:nth-of-type(3){
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 65px;
+    }
+   
+} 
+
+@media(min-width: 1024px){
+    .logo{
+        position: absolute;
+        left: 60px;
+    }
+    .menu{
+        position: absolute;
+        right: 60px;
+    }
+    .menu li{
+        cursor: pointer;
+        
+    }
+    .menu li:hover{
+        color: #2eb26b;
+        
+    }
+    .hero{
+        margin-top: -28px; /* because position: absolute above misplaces .hero in downward direction  WHY??? */
+    }
+    .Making_things{
+        padding-top: 246px;
+    }
+}
+
+@media(min-width: 1324px){
+    .logo{
+        width: 200px;
+        left: 120px;
+    }
+    .hero{
+        font-size: 18px;
+        margin-top: -32px;
+    }
+    .menu{
+        right: 120px;
+    }
+}
+@media(min-width: 1906px){
+    .logo{
+        width: 220px;
+        left: 190px;
+    }
+    .hero{
+        font-size: 20px;
+        margin-top: -37px;
+    }
+    .menu{
+        right: 190px;
+    }
+}
+@media(min-width: 2161px){
+    .logo{
+        width: 220px;
+        left: 290px;
+    }
+    .hero{
+        font-size: 24px;
+        margin-top: -46px;
+    }
+    .menu{
+        right: 290px;
+    }
+}
+/* Who We Are section */
+
+.who-we-areSection{
+    padding-top: 105px;
+    background-color: black;
+}
+.rectangle {
+    border-width: 2px;
+    border-color: rgb(0, 255, 108);
+    border-style: solid;
+    
+    height: 363px;
+}
+.who_we_are{
+    font-size: 2.500em;
+    font-family: "Raleway";
+    color: rgb(0, 255, 108);
+    display: inline-block;
+    
+    width:320px;
+    transform: translateY(56px);
+    background-color: black;
+    z-index: 3;
+    
+}
+.sit-by-the-fire{
+    font-size: 1.1em;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    margin-top: 58px;
+    margin: 58px 4.375em;
+    margin-bottom: 37px;
+    
+}
+.peer-out-window{
+    font-size: 1.1em;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    margin: 0 4.375em;
+    margin-bottom: 56px;
+
+}  
+.who-we-areSection .container{
+    margin-top: -112px; 
+    padding-bottom: 115px;
+}
+
+.who-we-are-image{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.content-of-who-we-are-section-no-image{
+    max-width: 600px;
+    background-color: black;
+    
+    
+}
+@media (min-width: 769px){
+    .content-of-who-we-are-section-no-image{
+        position: absolute;
+        top: 650px;
+        left: 60px;
+        width: 550px;
+         padding: 0 50px;
+    }
+    .who-we-areSection{
+        background-color: rgb(255, 255, 255);
+        
+    }
+    .who-we-are-image{
+        margin-top: 6px;
+    }
+    .rectangle{
+        margin-bottom: 50px;
+        margin-top: -60px;
+    }
+    .who_we_are{
+        transform: translateY(-4px);
+    }
+    .sit-by-the-fire{
+        font-size: 1.230em;
+        
+    }
+    .peer-out-window{
+        font-size: 1.230em;
+    
+    } 
+}
+@media (min-width: 1768px){
+    .content-of-who-we-are-section-no-image{
+        top: 650px;
+        left: 420px;
+        
+    }
+}
+@media (min-width: 2192px){
+    .content-of-who-we-are-section-no-image{ 
+        width: 900px;
+    }
+    .who_we_are{
+        font-size: 3.300em;
+        width: 410px;
+        transform: translateY(16px);
+    }
+    .sit-by-the-fire{
+        font-size: 1.730em;
+        margin-left: 3.75em;
+        margin-right: 3.375em;
+        
+    }
+    .peer-out-window{
+        font-size: 1.730em;
+        margin: 0 3.375em;
+
+    } 
+    .rectangle{
+        height: 550px;
+    }
+}
+@media (max-width: 1091px){
+    .content-of-who-we-are-section-no-image{
+        top: 650px;
+        left: 20px;
+        width: 400px; 
+        
+    }
+    .sit-by-the-fire{
+        font-size: 1.030em;
+        
+    }
+    .peer-out-window{
+        font-size: 1.030em;
+    
+    } 
+}
+
+@media (max-width: 768px){
+    .who-we-are-image{
+        display: none;
+    }
+    .content-of-who-we-are-section-no-image{
+        margin-top: 7px;
+        width: initial;
+    }
+    
+} 
+@media (max-width: 540px){
+    html{
+        font-size: 0.9rem;
+    }
+    .sit-by-the-fire{
+        margin-top: 43px;
+        margin-bottom: 17px;
+    }
+   
+} 
+
+@media (max-width: 465px){
+    .who_we_are{
+        font-size: 2.200em;
+        width: 260px;
+        transform: translateY(46px);
+    }
+    .sit-by-the-fire{
+        margin-left: 3.375em;
+        margin-right: 3.375em;
+        
+    }
+    .peer-out-window{
+        margin: 0 3.375em;
+
+    } 
+} 
+
+@media (max-width: 398px){
+    .who_we_are{
+        font-size: 1.850em; 
+        width: 200px;
+        transform: translateY(38px);
+    }
+    .sit-by-the-fire{
+        font-size: 1.140em;
+        margin-left: 2.075em;
+        margin-right: 2.075em;
+        
+    }
+    .peer-out-window{
+        font-size: 1.140em;
+        margin: 0 2.075em;
+
+    } 
+} 
+@media (max-width: 378px){
+    .sit-by-the-fire{
+        font-size: 1.090em;
+        
+    }
+    .peer-out-window{
+        font-size: 1.090em;
+
+    } 
+} 
+@media (max-width: 343px){
+    .sit-by-the-fire{
+        font-size: 1.030em;
+    }
+    .peer-out-window{
+        font-size: 1.030em;
+    } 
+} 
+
+/* Some Of Our Work Section */
+hr {
+    
+    border-color: rgb(0, 255, 108);
+    width: 151px;
+    margin-top: 77px;
+}
+  
+.some-of-our-work-h1 {
+    font-size: 2em;
+    font-weight: initial;
+    font-family: "Raleway";
+    color: rgb(35, 35, 35);
+    text-transform: uppercase;
+    margin-bottom: 43px;
+    
+}
+.flexContainerGallery{
+    display: flex;
+    flex-wrap: wrap;  
+}
+.some-of-our-workSection [class^="flexRow"]{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+[class^="galleryImg"] {
+    width: 50%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+.galleryImg1{
+    background-image: url("../images/build/portfolio-01.jpg");
+}
+.galleryImg2{
+    background-image: url("../images/build/portfolio-02.jpg");
+}
+.galleryImg3{
+    background-image: url("../images/build/portfolio-03.jpg");
+}
+.galleryImg4{
+    background-image: url("../images/build/portfolio-04.jpg");
+}
+.galleryImg5{
+    background-image: url("../images/build/portfolio-05.jpg");
+}
+.galleryImg6{
+    background-image: url("../images/build/portfolio-06.jpg");
+}
+@media (max-width: 399px){
+    .some-of-our-work-h1 {
+        font-size: 1.55em;
+    }
+}
+@media (max-width: 665px){
+    [class^="galleryImg"] {
+        width: 100%;
+    }
+}
+@media(min-width: 769px){
+    .some-of-our-workSection{
+       margin-top: -120px;
+    }
+}
+@media (max-width: 975px) and (min-width: 769px){
+    .some-of-our-workSection{
+        margin-top: -90px;
+     }
+}
+@media (max-width: 975px){
+    
+    [class^="galleryImg"] {
+        height: 290px;
+    }
+}
+@media (min-width: 1200px){
+    .flexContainerGallery{
+        flex-wrap: nowrap;
+    }
+    [class^="galleryImg"] {
+        width: 100%;
+        
+    }
+    
+}
+@media (min-width: 1700px){
+    [class^="galleryImg"] {
+        height: 370px;
+        
+    }
+    hr {
+        width: 251px;
+    }
+      
+    .some-of-our-work-h1 {
+        font-size: 3.0em;
+    }
+    
+}
+@media (min-width: 2269px){
+    [class^="galleryImg"] {
+        height: 420px;
+        
+    }
+    
+}
+
+/* Like What You See Section */
+.like-what-you-seeSection{
+    
+    background-color: #00ff6c;
+}
+.like-what-you-see-h1{
+    font-size: 2em;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin: 0;
+    padding-top: 84px;
+    margin-bottom: 14px; 
+}
+
+.Then-what-are-you-waiting-for-h2{
+    font-size: 1.6em;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.hire-usButton{
+    font-size: 1.4em;
+    padding: 10px 50px;
+    font-family: "Raleway";
+    color: rgb(35, 35, 35);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid rgb(35, 35, 35);
+    background-color: rgb(0, 255, 108);
+    margin-bottom: 87px;
+}
+
+@media (min-width: 1016px){
+    .like-what-you-seeSection{
+        font-size: 25px;
+    }
+    .hire-usButton{
+        padding: 10px 70px;
+        cursor: pointer;
+    }
+    .hire-usButton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    
+}
+
+@media (min-width: 1768px){
+    .like-what-you-seeSection{
+        font-size: 33px;
+    }
+    .hire-usButton{
+        padding: 10px 80px;
+    }
+    
+}
+
+/* Footer Section */
+.footerSection{
+    background-color: #232323;
+}
+.flexContainerFooter{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.flexContainerFooter .flexRow1 p{
+    margin-top: 80px;/* dlaczego marginesy sie nie nadpisuja to sie czesto pojawia i zrozum to */
+    margin-bottom: 31px;
+    text-align: left;
+}
+
+.flexContainerFooter .flexRow2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 105px; /* teraz działa nadpisanie */ 
+}
+[class*="footerColumn"]{ /* dlaczego ^ nie działa */
+    width: 32.0%;
+}
+.footerColumn1{ 
+    width: 100%;
+}
+
+.flexContainerFooter p{
+    font-size: 0.8em;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    line-height: 1.75;
+    
+}
+.flexContainerFooter .flexRow2 p:nth-of-type(1){
+    font-weight: 700;
+}
+.flexContainerFooter .flexRow2 .footerColumn3 p{
+    text-align: center;
+}
+
+.flexContainerFooter .flexRow2 .footerColumn3{
+    margin: 0 2%;
+}
+
+@media(min-width: 1000px){
+    .footerColumn1{ 
+        width: 33.3%;
+        margin-top: 23px; 
+    }
+    .flexContainerFooter .flexRow2{
+        width: 66.6%;
+        margin-top: 84px; 
+    }
+}
+
+@media(min-width: 1284px){
+    .flexContainerFooter p{
+        font-size: 1em;
+    }
+}
+@media(min-width: 1815px){
+    .flexContainerFooter p{
+        font-size: 1.4em;
+    }
+}
+
+
+
+  

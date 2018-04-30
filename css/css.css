@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  margin-top: -9px; }
+
 .container {
   width: 80%;
   margin: auto;
@@ -30,10 +37,14 @@
   display: inline;
   margin-right: 65px; }
 
-.menu li:nth-of-type(3) {
+.menu li a {
+  color: inherit;
+  text-decoration: none; }
+
+.menu li a:nth-of-type(3) {
   margin-right: 0; }
 
-.menu li:nth-of-type(1) {
+.menu li a:nth-of-type(1) {
   margin-left: -20px; }
 
 .cta {
@@ -60,12 +71,13 @@
   text-transform: uppercase;
   display: inline;
   border: none;
-  background-color: rgba(0, 255, 108, 0); }
+  background-color: rgba(0, 255, 108, 0);
+  cursor: pointer; }
 
 .rectangleOverTheButton1 {
   border-style: solid;
   border-width: 2px;
-  width: 10em;
+  width: 10.5em;
   padding: 1.125em 2.063em;
   border-color: #00ff6c;
   background-color: rgba(0, 255, 108, 0);
@@ -74,19 +86,29 @@
   text-align: center;
   cursor: pointer; }
 
+@media (max-width: 1024px) and (min-width: 482px) {
+  .menu {
+    margin-left: 12px; }
+  .menu li {
+    margin-right: 35px; }
+  .menu li:nth-last-of-type(2) {
+    margin-right: 50px;
+    margin-left: 15px; } }
+
 @media (max-width: 482px) {
   .menu {
     margin-left: 45px;
     margin-top: 29px; }
   .menu li:nth-of-type(3) {
     display: block;
-    margin-left: -85px;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .menu li a:nth-of-type(3) {
+    margin-left: -85px; } }
 
 @media (max-width: 393px) {
   .menu {
     font-size: 1.3em;
-    margin-left: 0;
+    margin-left: 30px;
     margin-top: 0; }
   .menu li:nth-of-type(1) {
     display: block;
@@ -423,7 +445,9 @@ hr {
     cursor: pointer; }
   .hire-usButton:hover {
     transform: scale(1.1);
-    transition: 0.3s; } }
+    transition: 0.3s ease-in-out; }
+  .hire-usButton {
+    transition: 0.4s; } }
 
 @media (min-width: 1768px) {
   .like-what-you-seeSection {
